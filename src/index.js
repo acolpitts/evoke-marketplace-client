@@ -9,6 +9,7 @@ import App from "./components/App";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import Checkout from "./components/Checkout";
+import Programs from "./components/Programs";
 
 const Root = () => {
   return (
@@ -19,6 +20,7 @@ const Root = () => {
         <Route component={Signin} path="/signin" />
         <Route component={Signup} path="/signup" />
         <Route component={Checkout} path="/checkout" />
+        <Route component={Programs} path="/:brandId" />
       </Switch>
     </Router>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Heading } from "gestalt";
+import { Box, Text } from "gestalt";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
           <Text color="white">Sign In</Text>
         </NavLink>
         <NavLink to="/">
-          <Heading color="white">App</Heading>
+          <h1>App</h1>
         </NavLink>
         <NavLink activeClassName="active" to="/signup">
           <Text color="white">Sign Up</Text>

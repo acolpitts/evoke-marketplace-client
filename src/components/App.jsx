@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   Container,
   Box,
-  Heading,
   Card,
   Image,
   Text,
@@ -80,9 +79,7 @@ function App() {
   return (
     <Container>
       <Box display="flex" justifyContent="center" marginBottom={2}>
-        <Heading color="midnight" size="md">
-          Splash Page
-        </Heading>
+        <h2>Splash Page</h2>
       </Box>
       <Box display="flex" justifyContent="center" alignItems="center">
         <SearchField
@@ -136,7 +133,7 @@ function App() {
           </Box>
         ))}
       </Box>
-      <Loader show={loadingBrands} />}
+      <Loader show={loadingBrands} />
     </Container>
   );
 }
