@@ -1,0 +1,110 @@
+// Font Families
+$font-family-primary: "HelveticaNeue-Light", "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+
+// Font Sizes
+$font-size-px: 16px;
+$font-size-xxl: 2.5rem; // 40px xx-large
+$font-size-xl: 2rem; // 32px x-large
+$font-size-lg: 1.5rem; // 24px large
+$font-size-md: 1.25rem; // 20px medium
+$font-size-base: 1rem; // 16px base
+$font-size-sm: 0.875rem; // 14px small
+$font-size-xs: 0.75rem; // 12px x-small
+$font-size-xxs: 0.6875rem; // 11px xx-small
+
+// Font Mixins
+@mixin text-preset-1 {
+  font-size: $font-size-xxl;
+  font-weight: 300;
+  line-height: 56px;
+}
+
+@mixin text-preset-2 {
+  font-size: $font-size-xl;
+  font-weight: 300;
+  line-height: 48px;
+}
+
+@mixin text-preset-3 {
+  font-size: $font-size-lg;
+  line-height: 40px;
+}
+
+@mixin text-preset-4 {
+  font-size: $font-size-md;
+  line-height: 32px;
+}
+
+@mixin text-preset-5 {
+  font-size: $font-size-base;
+  line-height: 24px;
+}
+
+@mixin text-preset-5--bold {
+  @include text-preset-5;
+  font-weight: 700;
+}
+
+@mixin text-preset-6 {
+  font-size: $font-size-xs;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin text-preset-6--bold {
+  @include text-preset-6;
+  font-weight: 700;
+}
+
+@mixin text-preset-7 {
+  font-size: $font-size-xxs;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin text-preset-7--bold {
+  @include text-preset-7;
+  font-weight: 700;
+}
+h1 {
+  @include text-preset-1;
+}
+
+h2 {
+  @include text-preset-2;
+}
+
+h3 {
+  @include text-preset-3;
+}
+
+h4 {
+  @include text-preset-4;
+}
+
+h5 {
+  @include text-preset-5;
+}
+
+h6 {
+  @include text-preset-6--bold;
+}
+
+// Example class using presets
+.caption {
+  @include text-preset-7;
+}
+
+.tabs_title {
+  @include text-preset-7;
+}
+
+.kicker {
+  @include text-preset-7--bold;
+}

@@ -1,0 +1,27 @@
+:root {
+  font-size: $font-size-px;
+  font-family: $font-family-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: $color-black-squeeze;
+}
+
+code {
+  font-family: $font-family-code;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none !important;
+}
+
+.active {
+  div {
+    color: greenyellow;
+  }
+}
